@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Charity Donation Form 
+    </title>
+  
+    <style>
+  
+        /* Styling the Body element i.e. Color, 
+        Font, Alignment */ 
+        body {
+            
+            font-family: arial;
+            text-align: center;
+            background-image:url(2.jpg) ;
+
+        }
+  
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+  
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+  
+        /* Styling form-control Label */ 
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+  
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+  
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+  
+        /* Styling Button */
+        button {
+            background-color:#827a82;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+   
+<body>
+    <h1> Charity Donation Form</h1>
+   
+    <!-- Create Form -->
+    <form id="form">
+  
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+  
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+   
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+  
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+   
+        <div class="form-control">
+            <label for="phone number" id="label-ph">
+                Phone Number
+            </label>
+  
+            <!-- Input Type Text -->
+            <input type="tel"
+                   id="phone"
+                   placeholder="Enter your Phone number" />
+        </div>
+   
+        <div class="form-control">
+           
+              <label for="address" id="label-address">   
+
+            Address </label>
+     
+     <textarea cols="80" rows="5" value="address"></textarea>
+     </br>
+     
+     <label>City </label>
+     <input type="text"name="city" maxlength="50">
+     </input><br> </br>
+     
+      <label>Pincode </label>
+     <input type="text"name="Pincode" maxlength="6">
+     </input><br> </br>
+     
+      <label>State </label>
+     <input type="text"name="State" maxlength="20">
+     </input><br> </br>
+     
+     
+     <label>Country </label>
+     <input type="text"name="Country" maxlength="50">
+     </input><br> </br>
+
+     <div class="form-control">
+            <label for="type" id="type">
+               Donation Type
+            </label>
+              
+            <!-- Dropdown options -->
+            <select name="Donation type" id="Donationtype">
+                <option value="food">food</option>
+                <option value="cloth">cloth</option>
+                <option value="sponsor">
+                sponsor
+                </option>
+                <option value="Things">Things</option>
+            </select>
+        </div>
+
+
+     <div class="form-control">
+            <label for="amount" id="amount">
+               Donation Amount
+            </label>
+            <input type="text"
+                   id="amount"
+                   placeholder="Donation Amount" />
+        </div>
+   
+      <div class="form-control">
+            <label for="comment">
+                Any comments 
+            </label>
+  
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+   
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+   
+</html>
